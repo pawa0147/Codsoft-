@@ -59,9 +59,18 @@ for i in range(5):
         index=i*4+j
         if index<len(x):
             label=x[index]
-            b=Button(button_frame,text=label,font="lucid 15 bold")
-            b.grid(row=i,column=j,sticky="nsew",padx=1,pady=1)
-            b.bind("<Button-1>",click)
+            if (label=="="):
+                b=Button(button_frame,text=label,font="lucid 15 bold",bg="orange")
+                b.grid(row=i,column=j,sticky="nsew",padx=1,pady=1)
+                b.bind("<Button-1>",click)
+            elif (label=="AC"):
+                b=Button(button_frame,text=label,font="lucid 15 bold",bg="light green")
+                b.grid(row=i,column=j,sticky="nsew",padx=1,pady=1)
+                b.bind("<Button-1>",click)
+            else:
+                b=Button(button_frame,text=label,font="lucid 15 bold")
+                b.grid(row=i,column=j,sticky="nsew",padx=1,pady=1)
+                b.bind("<Button-1>",click)
 
 #To expand buttons properly
 for i in range(5):
