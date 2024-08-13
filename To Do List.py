@@ -67,6 +67,7 @@ root.geometry("330x433")
 root.minsize(340,433)
 root.maxsize(340,433)
 root.title("To Do List")
+root.configure(bg="light blue")
 
 #To create menu bar
 menubar=Menu(root)
@@ -82,7 +83,7 @@ helpmenu=Menu(menubar,tearoff=0)
 helpmenu.add_command(label="About",command=about)
 menubar.add_cascade(label="Help",menu=helpmenu)
 
-label=Label(root,text="To Do List",font="lucid 15 bold").pack(pady=10)
+label=Label(root,text="To Do List",font="lucid 15 bold",bg="light blue").pack(pady=10)
 #To create frame for Tasks
 frame=Frame(root,bg="grey")
 frame.pack(padx=10,pady=10)
