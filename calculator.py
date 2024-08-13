@@ -21,9 +21,11 @@ def click(event):
     elif text=="AC":
         screenvalue.set("")
         screen.update()
-    elif text=="C":
-        screenvalue.set("")
-        screen.update()
+    elif text=="DEL":
+        current_value=screenvalue.get()
+        if current_value:
+            screenvalue.set(current_value[:-1])
+            screen.update()
     else:
         screenvalue.set(screenvalue.get()+text)
         screen.update()
