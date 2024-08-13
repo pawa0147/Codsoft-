@@ -83,7 +83,7 @@ helpmenu=Menu(menubar,tearoff=0)
 helpmenu.add_command(label="About",command=about)
 menubar.add_cascade(label="Help",menu=helpmenu)
 
-label=Label(root,text="To Do List",font="lucid 15 bold",bg="light blue").pack(pady=10)
+label=Label(root,text="To Do List",font="forte 20 bold",bg="light blue").pack(pady=10)
 #To create frame for Tasks
 frame=Frame(root,bg="grey")
 frame.pack(padx=10,pady=10)
@@ -98,7 +98,7 @@ listbox.pack(fill=BOTH,padx=2,pady=2)
 scrollbar.config(command=listbox.yview)
 
 #To get input from user
-userlabel=Label(root,text="Enter something",pady=20,font="bold")
+userlabel=Label(root,text="Enter something",pady=20,font="lucid 10 bold",bg="light blue")
 userlabel.pack()
 entryframe=Frame(root,bg="grey")
 entryframe.pack(padx=10,pady=10)
